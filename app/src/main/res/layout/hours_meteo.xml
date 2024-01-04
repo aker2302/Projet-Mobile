@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:id="@+id/parent"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/TVHourRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heure"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/IVCloud2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/TVHourRV"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/TVTemperatureRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IVCloud2"
+            android:text="5°C"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
